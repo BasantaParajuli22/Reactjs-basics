@@ -1,0 +1,40 @@
+{
+  "users": [
+    { "id": 1, "name": "John Doe", "email": "john@example.com" },
+    { "id": 2, "name": "Jane Smith", "email": "jane@example.com" }
+  ],
+  "orders": [
+    {
+      "id": 101,
+      "customerId": 1,
+      "totalAmount": 100.0,
+      "paymentStatus": "PENDING",
+      "orderStatus": "CREATED",
+      "deliveryStatus": "PENDING",
+      "description": "asd"
+    },
+    {
+      "id": 102,
+      "customerId": 2,
+      "totalAmount": 75.50,
+      "paymentStatus": "PAID",
+      "orderStatus": "PROCESSING",
+      "deliveryStatus": "SHIPPED",
+      "description": "I am very satisfied with my purchase. Great quality!"
+    },
+    {
+      "id": 103,
+      "customerId": 3,
+      "totalAmount": 200.0,
+      "paymentStatus": "PENDING",
+      "orderStatus": "CREATED",
+      "deliveryStatus": "PENDING",
+      "description": "This is a good product. I am looking forward to using it."
+    }
+  ],
+  "products": [
+    { "id": 201, "name": "Laptop", "price": 1200.0, "stock": 10 },
+    { "id": 202, "name": "Smartphone", "price": 800.0, "stock": 25 },
+    { "id": 203, "name": "Tablet", "price": 500.0, "stock": 15 }
+  ]
+}
