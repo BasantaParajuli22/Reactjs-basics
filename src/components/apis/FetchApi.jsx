@@ -20,18 +20,18 @@ function FetchApi() {
         }finally{
           setLoading(false);
         }
-      }//fn end
+      }//fetch fn end
 
       handleFetch();
     }, []);
+
     if (error) {
       return <div>Error: {error}</div>; // Display error message
-  }
+    }
 
   return (
     <>
-    <div> after fetching data</div>
-
+    <div> after fetching users data</div>
 
     {/* if loading then display spinner else data */}
      { loading ? ( <Spinner /> ) :

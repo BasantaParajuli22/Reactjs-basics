@@ -1,5 +1,5 @@
 import React from 'react'
-import FetchApi from '../components/hooks/FetchApi'
+import FetchApi from '../components/apis/FetchApi'
 
 function AllJobsPage() {
   return (

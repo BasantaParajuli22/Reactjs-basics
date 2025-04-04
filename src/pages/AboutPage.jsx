@@ -4,8 +4,7 @@ import ChangeInterval from '../components/hooks/ChangeInterval'
 import SetName from '../components/hooks/SetName'
 import SetActive from '../components/hooks/SetActive'
 import FormChange from '../components/hooks/FormChange'
-import FetchApi from '../components/hooks/FetchApi'
-import FetchApiId from '../components/hooks/FetchApiId'
+import FetchApi from '../components/apis/FetchApi'
 import Spinner from '../components/Spinner'
 
 function AboutPage() {

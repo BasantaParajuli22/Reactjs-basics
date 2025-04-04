@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 function FetchApiId() {
-    const{ id } = useParams(); //destructure userId from useParams()
-    // Convert string ID to number if needed
-    const numericId = Number(id);
-    console.log("ID from URL:", id, typeof id);
-    const [user, setUser] = useState([ ]);// Initialize with empty array, not empty string
 
+  const{ id } = useParams(); //destructure userId from useParams()
+  // Convert string ID to number if needed
+  const numericId = Number(id);
+  const [user, setUser] = useState([ ]);// Initialize with empty array, not empty string
+
+  console.log("ID from URL:", id, typeof id);
     useEffect( () =>{
         const handleFetch= async() =>{
             const response = await fetch(`http://localhost:3001/users/${numericId}`)
